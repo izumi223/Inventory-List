@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="yugi.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
+  <title>Inventory</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main-add">
+      
+      <select name="Category" id="category">
+        <option value="" selected>CATEGORY</option>
+        <option value="Beer">BEER</option>
+        <option value="Plum Wine">PLUM WINE</option>
+        <option value="Yuzu">YUZU SAKE</option>
+        <option value="Shochu">SHOCHU</option>
+        <option value="Sake">SAKE</option>
+      </select>
+
+      <label>Name: <input id="sake_name" type="text"></label>
+      <label>Count: <input id="stock_count" type="number"></label>
+      <button id="submit_btn">ADD</button>
+    </div>
+
+    <div class="table">
+      <table id="table_list" width="100%">
+        <tr>
+          <th>Category</th>
+          <th>Name</th>
+          <th>The current count</th>
+          <th>Update the count</th>
+          <th>Delete</th>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="yugi.js"></script>
+</body>
+
+</html>
+
